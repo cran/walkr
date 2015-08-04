@@ -1,0 +1,8 @@
+## -*- mode: makefile; -*-
+
+PKG_LIBS = `$(R_HOME)/bin/Rscript --vanilla -e "Rcpp:::LdFlags()"`
+PKG_CXXFLAGS = -DEIGEN_DONT_VECTORIZE
+
+## Thanks to the lme4 package for solving this check warning problem
+
+PKG_CXXFLAGS = -DNDEBUG -DEIGEN_DONT_VECTORIZE
