@@ -59,7 +59,7 @@ walkr <- function(A,
                   points, 
                   method = "dikin",
                   thin = 1,
-                  burn = 0,
+                  burn = 0.5,
                   chains = 1,
                   ret.format = "matrix") {
   
@@ -93,6 +93,10 @@ walkr <- function(A,
   }
   if(burn < 0) {
     stop("burn must be non-negative")
+  }
+  
+  if(burn >= 1){
+    stop("burn must be smaller than 100 percent")
   }
   
   if(points %% chains != 0){
