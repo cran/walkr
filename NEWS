@@ -1,4 +1,5 @@
-walkr 0.3.3
+walkr 0.3.4
 ----------------------------------------------------------------
 
-* New version of vignette
+* Updated the vignette 
+* Fixed previous warnings
