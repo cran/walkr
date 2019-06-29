@@ -31,9 +31,8 @@ for the har function of the
 hit-and-run package
 }
 \examples{
-\dontrun{
-## note that this Ax <= b is different from Ax=b that the 
-## user specifies for walkr (see transformation section in vignette) 
-hit_and_run(A = A, b = b, x0, points = 100, thin = 1, burn = 0, chains = 1) 
-} 
+A <- rbind(c(-1, 0), c(0, -1), c(1, 1))
+b <- c(0, 0, 1)
+hit_and_run(A = A, b = b, x0 = list(c(0.1,0.1)), points = 5)  
+   
 }

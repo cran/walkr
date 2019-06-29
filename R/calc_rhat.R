@@ -11,10 +11,9 @@
 #' @return a vector of rhats 
 #' 
 #' @examples
-#' \dontrun{
-#' ## x is a list of sampled chains
-#' calc_rhat(x)
-#' }
+#' x <- matrix(seq(1,12,1), ncol = 3, nrow = 4) 
+#' calc_rhat(list(x,x,x))
+#' 
 
 
 calc_rhat <- function(x) {

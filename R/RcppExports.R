@@ -14,7 +14,7 @@
 #' }
 #' 
 rcppeigen_ftrans <- function(A) {
-    .Call('walkr_rcppeigen_ftrans', PACKAGE = 'walkr', A)
+    .Call('_walkr_rcppeigen_ftrans', PACKAGE = 'walkr', A)
 }
 
 #' Fast Matrix Inverse
@@ -31,7 +31,7 @@ rcppeigen_ftrans <- function(A) {
 #' }
 #' 
 rcppeigen_fsolve <- function(A) {
-    .Call('walkr_rcppeigen_fsolve', PACKAGE = 'walkr', A)
+    .Call('_walkr_rcppeigen_fsolve', PACKAGE = 'walkr', A)
 }
 
 #' Fast Matrix Determinant
@@ -48,7 +48,7 @@ rcppeigen_fsolve <- function(A) {
 #' }
 #' 
 rcppeigen_fdet <- function(A) {
-    .Call('walkr_rcppeigen_fdet', PACKAGE = 'walkr', A)
+    .Call('_walkr_rcppeigen_fdet', PACKAGE = 'walkr', A)
 }
 
 #' Fast Matrix Product
@@ -66,7 +66,7 @@ rcppeigen_fdet <- function(A) {
 #' }
 #' 
 rcppeigen_fprod <- function(A, B) {
-    .Call('walkr_rcppeigen_fprod', PACKAGE = 'walkr', A, B)
+    .Call('_walkr_rcppeigen_fprod', PACKAGE = 'walkr', A, B)
 }
 
 #' Fast Matrix Cross-Product
@@ -84,7 +84,7 @@ rcppeigen_fprod <- function(A, B) {
 #' }
 #' 
 rcppeigen_fcrossprod <- function(A, B) {
-    .Call('walkr_rcppeigen_fcrossprod', PACKAGE = 'walkr', A, B)
+    .Call('_walkr_rcppeigen_fcrossprod', PACKAGE = 'walkr', A, B)
 }
 
 #' Fast Matrix T-Cross-Product
@@ -102,6 +102,6 @@ rcppeigen_fcrossprod <- function(A, B) {
 #' }
 #' 
 rcppeigen_ftcrossprod <- function(A, B) {
-    .Call('walkr_rcppeigen_ftcrossprod', PACKAGE = 'walkr', A, B)
+    .Call('_walkr_rcppeigen_ftcrossprod', PACKAGE = 'walkr', A, B)
 }
 

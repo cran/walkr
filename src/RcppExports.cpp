@@ -8,7 +8,7 @@ using namespace Rcpp;
 
 // rcppeigen_ftrans
 Eigen::MatrixXd rcppeigen_ftrans(const Eigen::MatrixXd& A);
-RcppExport SEXP walkr_rcppeigen_ftrans(SEXP ASEXP) {
+RcppExport SEXP _walkr_rcppeigen_ftrans(SEXP ASEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -19,7 +19,7 @@ END_RCPP
 }
 // rcppeigen_fsolve
 Eigen::MatrixXd rcppeigen_fsolve(const Eigen::Map<Eigen::MatrixXd>& A);
-RcppExport SEXP walkr_rcppeigen_fsolve(SEXP ASEXP) {
+RcppExport SEXP _walkr_rcppeigen_fsolve(SEXP ASEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -30,7 +30,7 @@ END_RCPP
 }
 // rcppeigen_fdet
 double rcppeigen_fdet(const Eigen::Map<Eigen::MatrixXd>& A);
-RcppExport SEXP walkr_rcppeigen_fdet(SEXP ASEXP) {
+RcppExport SEXP _walkr_rcppeigen_fdet(SEXP ASEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -41,7 +41,7 @@ END_RCPP
 }
 // rcppeigen_fprod
 Eigen::MatrixXd rcppeigen_fprod(const Eigen::Map<Eigen::MatrixXd>& A, const Eigen::Map<Eigen::MatrixXd>& B);
-RcppExport SEXP walkr_rcppeigen_fprod(SEXP ASEXP, SEXP BSEXP) {
+RcppExport SEXP _walkr_rcppeigen_fprod(SEXP ASEXP, SEXP BSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -53,7 +53,7 @@ END_RCPP
 }
 // rcppeigen_fcrossprod
 Eigen::MatrixXd rcppeigen_fcrossprod(const Eigen::Map<Eigen::MatrixXd>& A, const Eigen::Map<Eigen::MatrixXd>& B);
-RcppExport SEXP walkr_rcppeigen_fcrossprod(SEXP ASEXP, SEXP BSEXP) {
+RcppExport SEXP _walkr_rcppeigen_fcrossprod(SEXP ASEXP, SEXP BSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -65,7 +65,7 @@ END_RCPP
 }
 // rcppeigen_ftcrossprod
 Eigen::MatrixXd rcppeigen_ftcrossprod(const Eigen::Map<Eigen::MatrixXd>& A, const Eigen::Map<Eigen::MatrixXd>& B);
-RcppExport SEXP walkr_rcppeigen_ftcrossprod(SEXP ASEXP, SEXP BSEXP) {
+RcppExport SEXP _walkr_rcppeigen_ftcrossprod(SEXP ASEXP, SEXP BSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;

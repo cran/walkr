@@ -21,3 +21,11 @@ interval of each dimension's coordiates across the whole sets of points,
 Gelman-Rubin statistics, trace-plots, and other diagnostic tools for
 examining convergence.
 }
+\examples{
+explore_walkr("list")
+
+\dontrun{
+## x is the set of points sampled, this uses shinystan to visualize results!
+explore_walkr(x)
+}
+}

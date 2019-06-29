@@ -1,5 +1,4 @@
-walkr 0.3.4
+walkr 0.4.0
 ----------------------------------------------------------------
 
-* Updated the vignette 
-* Fixed previous warnings
+* Fixed previous CRAN issues, for resubmission CRAN

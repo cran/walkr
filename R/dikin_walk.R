@@ -18,6 +18,11 @@
 #'         being a matrix object with each column as a point
 #'
 #' @examples
+#' 
+#' A <- rbind(c(1, 0), c(0, 1))
+#' b <- c(1, 1)    
+#' sampled_points <- dikin_walk(A = A, b = b, points = 10, x0 = list(c(0.5,0.5)))
+#' 
 #' \dontrun{
 #' ## note that this Ax <= b is different from Ax=b that the 
 #' ## user specifies for walkr (see transformation section in vignette) 

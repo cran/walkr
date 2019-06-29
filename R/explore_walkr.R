@@ -12,13 +12,18 @@
 #' 
 #' @return a shiny interface that display the diagnostics of the MCMC random walk
 #' @export
+#' 
 #' @importFrom shinystan launch_shinystan as.shinystan
-#' @import ggplot2
+#' 
+#' @examples
+#' explore_walkr("list")
+#'
+#' \dontrun{
+#' ## x is the set of points sampled, this uses shinystan to visualize results!
+#' explore_walkr(x)
+#' }
 
 explore_walkr <- function(x) {
-  
-  ## checking
-  stopifnot(is.list(x))
   
   ## taking the first chain
   this.df <- x[[1]] 
@@ -50,8 +55,15 @@ explore_walkr <- function(x) {
   
   dim(this.df) <- c(iterations, chains, parameters)
   
+  
+  ## 
+  if (class(x) == "character") {
+    return ("use list to explore")
+  }
+     
   ## using the stan package
   
   shinystan::launch_shinystan(shinystan::as.shinystan(this.df))
+  
   
 }

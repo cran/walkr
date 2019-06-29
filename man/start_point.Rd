@@ -25,9 +25,8 @@ polytope, this function picks n random
 starting "center" points using linear programming.
 }
 \examples{
-\dontrun{
-## note that this Ax <= b is different from Ax=b that the 
-## user specifies for walkr (see transformation section in vignette) 
+
+A <- rbind(c(-1, 0), c(0, -1), c(1, 1))
+b <- c(0, 0, 1)
 start_point(A = A, b = b, n = 1, average = 10) 
-}
 }
